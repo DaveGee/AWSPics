@@ -1,0 +1,2 @@
+- Create `dist` folder and add `config.json` inside from password manager
+- run `./deploy awspics-func`
