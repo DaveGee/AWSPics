@@ -3,6 +3,7 @@
   <head>
     {googletracking}
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
     <title>Vous devez avoir le mot-de-passe pour visionner les photos</title>
     <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond|Parisienne" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
@@ -218,8 +219,9 @@
           $this.addClass('ok');
           $state.html('Chargement...');
           setTimeout(function() {
-            window.location.replace("https://{website}");
-          }, 1000);
+            //window.location.replace("https://{website}");
+            window.location.reload(true);
+          }, 500);
         },
         error: function(XMLHttpRequest, textStatus, errorThrown) {
           $this.addClass('fail');
